@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple E-commerce Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f5f5f5;
+    }
+    .product-list, .cart {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product, .cart-item {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      background: white;
+      width: 200px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Shopping</h1>
+
+  <div class="product-list" id="productList">
+    <!-- Products will be added by JS -->
+  </div>
+
+  <h2></h2>
+  <div class="cart" id="cart"></div>
+  <p><strong><span id="total"></span></strong></p>
+
+  <script>
+    const products = [
+      { id: 
